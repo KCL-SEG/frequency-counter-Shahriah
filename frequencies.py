@@ -3,5 +3,12 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+
+    for i in range(len(items)):
+        items[i] = str(items[i])
+
+    for j in items:
+        frequencies[j] = frequencies.get(j,0) + 1
+        
+    
     return frequencies
